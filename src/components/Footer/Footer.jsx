@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.css"
-import {FaFacebook, FaHome,FaLinkedin,FaMailBulk,FaPhone, FaTwitter} from "react-icons/fa"
+import {FaGithub, FaHome,FaLinkedin,FaMailBulk,FaPhone, FaInstagram} from "react-icons/fa"
 
 function Footer() {
   return (
@@ -10,7 +10,7 @@ function Footer() {
                 <div className="location">
                     <FaHome size={20} style={{color:"#fff", marginRight:"2rem"}}/>
                 <div>
-                    <p>123 Housing Society.</p>
+                    <p>35-4-298 , Hanamkonda , Warangal</p>
                     <p>India.</p>
                 </div>
                 </div>
@@ -23,12 +23,15 @@ function Footer() {
             </div>
 
             <div className="right">
-                <h4>About the Company</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, libero.</p>  
+                <h4>About Me</h4>
+                <p>Here are some of my social handles,where you can come to know about me even more.</p>  
                 <div className="social">
-                <FaFacebook size={20} style={{color:"#fff", marginRight:"1rem"}}/>
-                <FaTwitter size={20} style={{color:"#fff", marginRight:"1rem"}}/>
-                <FaLinkedin size={20} style={{color:"#fff", marginRight:"1rem"}}/>
+                    <a target='_blank' href="https://github.com/RithvikManda"><FaGithub size={30} style={{color:"#fff", marginRight:"1rem"}}/></a>
+                    <a target='_blank' href="https://www.instagram.com/rithvik_2710/"><FaInstagram size={30} style={{color:"#fff", marginRight:"1rem"}}/></a>
+                
+                
+                <a target='_blank' href="https://www.linkedin.com/in/rithvik-manda-7a9a5a257/"><FaLinkedin size={30} style={{color:"#fff", marginRight:"1rem"}}/></a>
+                
                     </div>          
             </div>
         </div>

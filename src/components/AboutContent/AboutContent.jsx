@@ -10,7 +10,9 @@ function AboutContent() {
     <div className="about">
         <div className="left">
             <h1>Who Am I?</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam facere alias inventore odio illo voluptatem animi eius! Sit, aut in?</p>
+            <p>
+            A Full stack Web developer and designs a user friendly web design using React and Node.
+            </p>
             <Link to='/contact'>
                 <button className="btn">Contact</button>
             </Link>

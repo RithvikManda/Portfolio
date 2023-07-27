@@ -1,7 +1,5 @@
 import React from 'react'
 import "./SkillCard.css"
-import pro1 from "../assests/hero2.png"
-import { NavLink } from 'react-router-dom'
 import {FaCode, FaDatabase,FaDesktop} from "react-icons/fa"
 
 
