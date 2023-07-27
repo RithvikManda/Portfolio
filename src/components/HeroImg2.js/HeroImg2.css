@@ -8,7 +8,7 @@
 .hero-img::before {
     content: "";
     background: url("https://e0.pxfuel.com/wallpapers/520/1013/desktop-wallpaper-cool-landscape-night-minimal-art-laptop-minimalist-and-background-minimalist-laptop.jpg");
-    background-size: contain;
+    background-size: cover;
     background-position: center top;
     height: 100%;
     width: 100%;
