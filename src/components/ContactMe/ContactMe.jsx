@@ -10,11 +10,10 @@ function ContactMe() {
 
     emailjs
       .sendForm(
-        // Replace with your EmailJS Service ID ,
-        // Replace with your EmailJS Template ID,
-        form.current, 
-        // Replace with your EmailJS Public Key
-           
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,   
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,  
+        form.current,
+        process.env.REACT_APP_EMAILJS_USER_ID    
       )
       .then(
         (result) => {
