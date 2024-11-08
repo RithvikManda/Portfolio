@@ -26,11 +26,11 @@ function Footer() {
                 <h4>About Me</h4>
                 <p>Here are some of my social handles,where you can come to know about me even more.</p>  
                 <div className="social">
-                    <a target='_blank' href="https://github.com/RithvikManda"><FaGithub size={30} style={{color:"#fff", marginRight:"1rem"}}/></a>
-                    <a target='_blank' href="https://www.instagram.com/rithvik_2710/"><FaInstagram size={30} style={{color:"#fff", marginRight:"1rem"}}/></a>
+                    <a target='_blank'  href="https://github.com/RithvikManda" rel="noopener noreferrer"><FaGithub size={30} style={{color:"#fff", marginRight:"1rem"}}/></a>
+                    <a target='_blank' href="https://www.instagram.com/rithvik_2710/" rel="noopener noreferrer"><FaInstagram size={30} style={{color:"#fff", marginRight:"1rem"}}/></a>
                 
                 
-                <a target='_blank' href="https://www.linkedin.com/in/rithvik-manda-7a9a5a257/"><FaLinkedin size={30} style={{color:"#fff", marginRight:"1rem"}}/></a>
+                <a target='_blank' href="https://www.linkedin.com/in/rithvik-manda-7a9a5a257/" rel="noopener noreferrer"><FaLinkedin size={30} style={{color:"#fff", marginRight:"1rem"}}/></a>
                 
                     </div>          
             </div>

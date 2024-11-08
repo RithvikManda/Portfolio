@@ -1,6 +1,6 @@
 import React from 'react'
 import "./WorkCard.css"
-import pro1 from "../assests/hero2.png"
+// import pro1 from "../assests/hero2.png"
 import { NavLink } from 'react-router-dom'
 
 import weather from "../WorkCard/weather.avif"
