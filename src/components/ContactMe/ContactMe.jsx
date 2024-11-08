@@ -1,22 +1,49 @@
-import React from 'react'
-import "./Contact.css"
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import "./Contact.css";
 
 function ContactMe() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_wd2iyrn',   // Replace with your EmailJS Service ID
+        'service_wd2iyrn',  // Replace with your EmailJS Template ID
+        form.current,
+        'PuT73t1F8NaNcrhO6'    // Replace with your EmailJS Public Key
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message sent successfully!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to send message. Please try again later.");
+        }
+      );
+
+    e.target.reset(); // Reset the form after submission
+  };
+
   return (
     <div className="form">
-      <form>
-        <label >Your Name</label>
-        <input type="text" />
-        <label >Email</label>
-        <input type="email" />
-        <label >Subject</label>
-        <input type="text" />
-        <label >Message</label>
-        <textarea rows="6" placeholder='Type your message here '/>
-        <button className='btn'>Submit</button>
+      <form ref={form} onSubmit={sendEmail}>
+        <label>Your Name</label>
+        <input type="text" name="user_name" required />
+        <label>Email</label>
+        <input type="email" name="user_email" required />
+        <label>Subject</label>
+        <input type="text" name="subject" required />
+        <label>Message</label>
+        <textarea rows="6" name="message" placeholder="Type your message here" required />
+        <button type="submit" className="btn">Submit</button>
       </form>
     </div>
-  )
+  );
 }
 
-export default ContactMe
+export default ContactMe;

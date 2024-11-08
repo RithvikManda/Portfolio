@@ -2,7 +2,7 @@ import React from 'react'
 import "./Hero.css"
 import IntroImg from "../assests/hero1.png"
 import { Link } from 'react-router-dom'
-import Typed from "react-typed"
+import { ReactTyped as Typed } from 'react-typed';
 
 
 
@@ -19,8 +19,7 @@ function Hero() {
         strings={["Hi, I'm Rithvik","I'm a Web Designer","I'm a Web Developer",]}
         typeSpeed={40}
         backSpeed={60}
-        loop
-/>
+        loop  />
         <h1>React Developer</h1>
         <div className=''>
           <Link to="/project" className='btn'>PROJECTS</Link>
